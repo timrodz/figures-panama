@@ -31,6 +31,14 @@ jobs:
       - run:
           name: Linting
           command: npm run lint
+      # Lint the html markups
+      - run:
+          name: Html lint check
+          command: npm run lint:html
+      # Lint the scss code
+      - run:
+          name: Scss lint check
+          command: npm run lint:scss
       # Test the source code
       - run:
           name: Testing
