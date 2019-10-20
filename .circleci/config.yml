@@ -39,3 +39,16 @@ jobs:
       - run:
           name: End to End Test
           command: npm run e2e -- --protractor-config=e2e/protractor-ci.conf.js
+
+workflows:
+  version: 2
+  # the test workflow
+  test_workflow:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only:
+                - develop
+                - staging
+                - master
