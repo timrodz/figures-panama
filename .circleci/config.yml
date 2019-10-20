@@ -3,7 +3,7 @@ version: 2
 jobs:
   # The test job
   test:
-    working_directory: ~/project-name
+    working_directory: ~/repo
     docker:
       - image: circleci/node:10-browsers
     steps:
@@ -31,11 +31,21 @@ jobs:
       - run:
           name: Linting
           command: npm run lint
+      # Lint the html markups
+      - run:
+          name: Html lint check
+          command: npm run lint:html
+      # Lint the scss code
+      - run:
+          name: Scss lint check
+          command: npm run lint:scss
       # Test the source code
       - run:
           name: Testing
-          command: npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
-      # End to End test
-      - run:
-          name: End to End Test
-          command: npm run e2e -- --protractor-config=e2e/protractor-ci.conf.js
+          command: npm run test
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - test
