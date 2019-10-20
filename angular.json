@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "efrain": {
+    "figures-panama": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/efrain",
+            "outputPath": "dist/figures-panama",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "efrain:build"
+            "browserTarget": "figures-panama:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "efrain:build:production"
+              "browserTarget": "figures-panama:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "efrain:build"
+            "browserTarget": "figures-panama:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "efrain:serve"
+            "devServerTarget": "figures-panama:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "efrain:serve:production"
+              "devServerTarget": "figures-panama:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "efrain"
+  "defaultProject": "figures-panama"
 }
