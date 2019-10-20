@@ -1,0 +1,30 @@
+{
+  "name": "figures-panama",
+  "version": "1.0.0",
+  "description": "Data Visualization charts gathered from www.datosabiertos.gob.pa (Panama Open Data)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timrodz/figures-panama.git"
+  },
+  "keywords": [
+    "Data Visualization",
+    "Data Analysis",
+    "Open Data",
+    "Panama"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timrodz/figures-panama/issues"
+  },
+  "homepage": "https://github.com/timrodz/figures-panama#readme",
+  "devDependencies": {
+    "@babel/parser": "^7.6.4",
+    "eslint": "^6.5.1",
+    "prettier": "^1.18.2"
+  }
+}
