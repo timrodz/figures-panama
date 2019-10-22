@@ -1,5 +1,6 @@
 # Figures Panama
-Data Visualization charts gathered from  [Panama Open Data](www.datosabiertos.gob.pa)
+
+Data Visualization charts gathered from [Panama Open Data](https://www.datosabiertos.gob.pa/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
 
