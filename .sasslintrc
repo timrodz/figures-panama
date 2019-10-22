@@ -1,5 +1,0 @@
-{
-  "name": "panama-data",
-  "version": "1.0.0",
-  "sasslintConfig": "./**/*.scss"
-}
