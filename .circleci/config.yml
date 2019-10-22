@@ -42,7 +42,7 @@ jobs:
       # Test the source code
       - run:
           name: Testing
-          command: ng test
+          command: npm run test
 
 workflows:
   version: 2
