@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "lint:html": "./node_modules/.bin/htmlhint --config=htmlhint.conf",
-    "lint:scss": "./node_modules/.bin/sass-lint"
+    "lint:scss": "./node_modules/.bin/stylelint './**/*.scss' --syntax scss"
   },
   "private": true,
   "dependencies": {
@@ -44,7 +44,8 @@
     "karma-jasmine-html-reporter": "^1.4.0",
     "prettier": "^1.18.2",
     "protractor": "~5.4.0",
-    "sass-lint": "^1.13.1",
+    "stylelint": "^11.1.1",
+    "stylelint-config-standard": "^19.0.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
